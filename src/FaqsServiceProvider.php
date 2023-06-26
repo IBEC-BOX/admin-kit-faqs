@@ -1,14 +1,14 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace AdminKit\Faqs;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
-use VendorName\Skeleton\Providers\FilamentServiceProvider;
-use VendorName\Skeleton\Providers\RouteServiceProvider;
+use AdminKit\Faqs\Commands\FaqsCommand;
+use AdminKit\Faqs\Providers\FilamentServiceProvider;
+use AdminKit\Faqs\Providers\RouteServiceProvider;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class FaqsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -18,11 +18,11 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('admin-kit-faqs')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_:package_slug_without_prefix_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_faqs_table')
+            ->hasCommand(FaqsCommand::class);
     }
 
     public function registeringPackage()

@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\UI\Filament\Resources;
+namespace AdminKit\Faqs\UI\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Resources\Concerns\Translatable;
@@ -8,14 +8,14 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use VendorName\Skeleton\Models\ModelName;
-use VendorName\Skeleton\UI\Filament\Resources\ModelNameResource\Pages;
+use AdminKit\Faqs\Models\Faq;
+use AdminKit\Faqs\UI\Filament\Resources\FaqResource\Pages;
 
-class ModelNameResource extends Resource
+class FaqResource extends Resource
 {
     use Translatable;
 
-    protected static ?string $model = ModelName::class;
+    protected static ?string $model = Faq::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-x';
 
@@ -58,9 +58,9 @@ class ModelNameResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListModelName::route('/'),
-            'create' => Pages\CreateModelName::route('/create'),
-            'edit' => Pages\EditModelName::route('/{record}/edit'),
+            'index' => Pages\ListFaq::route('/'),
+            'create' => Pages\CreateFaq::route('/create'),
+            'edit' => Pages\EditFaq::route('/{record}/edit'),
         ];
     }
 

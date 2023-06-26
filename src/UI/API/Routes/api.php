@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use VendorName\Skeleton\UI\API\Controllers\ModelNameController;
+use AdminKit\Faqs\UI\API\Controllers\FaqController;
 
-Route::get('/:package_slug_without_prefix', [ModelNameController::class, 'index']);
-Route::get('/:package_slug_without_prefix/{id}', [ModelNameController::class, 'show']);
+Route::get('/faqs', [FaqController::class, 'index']);
+Route::get('/faqs/{id}', [FaqController::class, 'show']);

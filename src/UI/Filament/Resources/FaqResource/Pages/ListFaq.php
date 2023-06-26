@@ -1,16 +1,16 @@
 <?php
 
-namespace VendorName\Skeleton\UI\Filament\Resources\ModelNameResource\Pages;
+namespace AdminKit\Faqs\UI\Filament\Resources\FaqResource\Pages;
 
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
-use VendorName\Skeleton\UI\Filament\Resources\ModelNameResource;
+use AdminKit\Faqs\UI\Filament\Resources\FaqResource;
 
-class ListModelName extends ListRecords
+class ListFaq extends ListRecords
 {
     use ListRecords\Concerns\Translatable;
 
-    protected static string $resource = ModelNameResource::class;
+    protected static string $resource = FaqResource::class;
 
     protected function getActions(): array
     {

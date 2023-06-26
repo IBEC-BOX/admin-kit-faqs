@@ -1,13 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton\Models;
+namespace AdminKit\Faqs\Models;
 
 use AdminKit\Core\Abstracts\Models\AbstractModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Translatable\HasTranslations;
-use VendorName\Skeleton\Database\Factories\ModelNameFactory;
+use AdminKit\Faqs\Database\Factories\FaqFactory;
 
-class ModelName extends AbstractModel
+class Faq extends AbstractModel
 {
     use HasFactory;
     use HasTranslations;
@@ -24,8 +24,8 @@ class ModelName extends AbstractModel
         'title',
     ];
 
-    protected static function newFactory(): ModelNameFactory
+    protected static function newFactory(): FaqFactory
     {
-        return new ModelNameFactory();
+        return new FaqFactory();
     }
 }

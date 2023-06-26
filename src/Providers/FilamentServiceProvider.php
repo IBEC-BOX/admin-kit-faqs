@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace VendorName\Skeleton\Providers;
+namespace AdminKit\Faqs\Providers;
 
 use Filament\PluginServiceProvider;
-use VendorName\Skeleton\UI\Filament\Resources\ModelNameResource;
+use AdminKit\Faqs\UI\Filament\Resources\FaqResource;
 
 class FilamentServiceProvider extends PluginServiceProvider
 {
-    public static string $name = ':package_slug_without_prefix';
+    public static string $name = 'faqs';
 
     protected array $resources = [
-        ModelNameResource::class,
+        FaqResource::class,
     ];
 }
