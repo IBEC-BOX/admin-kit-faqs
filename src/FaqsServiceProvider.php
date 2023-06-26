@@ -2,11 +2,11 @@
 
 namespace AdminKit\Faqs;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 use AdminKit\Faqs\Commands\FaqsCommand;
 use AdminKit\Faqs\Providers\FilamentServiceProvider;
 use AdminKit\Faqs\Providers\RouteServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class FaqsServiceProvider extends PackageServiceProvider
 {

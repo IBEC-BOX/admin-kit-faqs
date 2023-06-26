@@ -2,9 +2,9 @@
 
 namespace AdminKit\Faqs\Tests;
 
+use AdminKit\Faqs\FaqsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AdminKit\Faqs\FaqsServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -2,14 +2,14 @@
 
 namespace AdminKit\Faqs\UI\Filament\Resources;
 
+use AdminKit\Faqs\Models\Faq;
+use AdminKit\Faqs\UI\Filament\Resources\FaqResource\Pages;
 use Filament\Forms;
 use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use AdminKit\Faqs\Models\Faq;
-use AdminKit\Faqs\UI\Filament\Resources\FaqResource\Pages;
 
 class FaqResource extends Resource
 {

@@ -3,9 +3,9 @@
 namespace AdminKit\Faqs\Models;
 
 use AdminKit\Core\Abstracts\Models\AbstractModel;
+use AdminKit\Faqs\Database\Factories\FaqFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Translatable\HasTranslations;
-use AdminKit\Faqs\Database\Factories\FaqFactory;
 
 class Faq extends AbstractModel
 {

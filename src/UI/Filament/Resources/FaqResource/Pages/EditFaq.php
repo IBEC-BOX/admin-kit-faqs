@@ -2,9 +2,9 @@
 
 namespace AdminKit\Faqs\UI\Filament\Resources\FaqResource\Pages;
 
+use AdminKit\Faqs\UI\Filament\Resources\FaqResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\EditRecord;
-use AdminKit\Faqs\UI\Filament\Resources\FaqResource;
 
 class EditFaq extends EditRecord
 {

@@ -2,9 +2,9 @@
 
 namespace AdminKit\Faqs\UI\Filament\Resources\FaqResource\Pages;
 
+use AdminKit\Faqs\UI\Filament\Resources\FaqResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
-use AdminKit\Faqs\UI\Filament\Resources\FaqResource;
 
 class ListFaq extends ListRecords
 {
