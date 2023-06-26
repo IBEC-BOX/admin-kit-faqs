@@ -21,7 +21,7 @@ class FaqsServiceProvider extends PackageServiceProvider
             ->name('admin-kit-faqs')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_faqs_table')
+            ->hasMigration('create_admin_kit_faqs_table')
             ->hasCommand(FaqsCommand::class);
     }
 

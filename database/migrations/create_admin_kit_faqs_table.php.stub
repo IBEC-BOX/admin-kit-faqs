@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('faqs', function (Blueprint $table) {
+        Schema::create('admin_kit_faqs', function (Blueprint $table) {
             $table->id();
 
             // add fields
@@ -20,6 +20,6 @@ return new class extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('faqs');
+        Schema::dropIfExists('admin_kit_faqs');
     }
 };

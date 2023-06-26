@@ -12,6 +12,8 @@ class Faq extends AbstractModel
     use HasFactory;
     use HasTranslations;
 
+    protected $table = 'admin_kit_faqs';
+
     protected $fillable = [
         'title',
     ];
