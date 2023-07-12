@@ -18,4 +18,9 @@ class CreateFaq extends CreateRecord
             Actions\LocaleSwitcher::make(),
         ];
     }
+
+    protected function getRedirectUrl(): string
+    {
+        return FaqResource::getUrl();
+    }
 }
